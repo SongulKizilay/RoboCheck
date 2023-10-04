@@ -3,7 +3,7 @@ import sys
 
 def main():
     # subdomaintxt.txt dosyasını oku
-    with open('/root/Desktop/subdomain.txt', 'r') as subdomain_file:
+    with open('/root/Desktop/robots.txt', 'r') as subdomain_file:
         subdomains = subdomain_file.read().splitlines()
 
     try:
@@ -11,7 +11,7 @@ def main():
         for subdomain in subdomains:
             # ctrl+c yapılınca programı sonlandırmak için KeyboardInterrupt'i yakala
             try:
-                subdomain_url = subdomain.strip()  # Boşlukları kaldırın
+                subdomain_url = subdomain.strip() # Boşlukları kaldırın
                 result = subprocess.check_output(['curl', '-sk', subdomain_url], stderr=subprocess.STDOUT)
                 result = result.decode('utf-8')
                 print(f"Subdomain: {subdomain_url}\n")
