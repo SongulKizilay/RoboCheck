@@ -19,14 +19,14 @@ curl komutunu kullanarak alt alan adlarının robots.txt dosyalarını kontrol e
 Başarılı bir şekilde kontrol edilen alt alan adları için robots.txt içeriğini ve ayrıntıları çıktı olarak verir.
 Başarısız olan alt alan adları için hata mesajını ve ayrıntıları çıktı olarak verir.
 Örnek Çıktı
-Subdomain: https://link.dev.x.immutable.com
+Subdomain: https://link.dev.x.site.com
 
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
 
 --------------------------------------------------
-Subdomain: https://support.immutable.com
+Subdomain: https://support.site.com
 
 User-agent: *
 Disallow: /not-authorized
